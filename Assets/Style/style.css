@@ -1,0 +1,141 @@
+
+/* Set font and background */
+body {
+  font-family: 'Special Elite';
+  background-color: #3a3a3a;
+  min-height: 100%;
+  color: #dddddd;
+}
+
+/* Set primary background image */
+body.primary {
+  background-image: url("../Images/shallow-focus-photography-of-water-droplets-1202841.jpg");
+  background-repeat: no-repeat;
+}
+
+body.portfolio {
+  background-color: #110f13;
+}
+
+/* Logo set in nav */
+nav {
+  background-image: url("../Images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  height: 60px;
+}
+
+/* Navbar "brand" font color and size */
+a.navbar-brand {
+  color: #dddddd;
+  font-size: 24px;
+}
+
+/* Title class for index.html */
+.title {
+  padding-top: 40px;
+}
+
+/* Buttons styling */
+a#button {
+  border: 2px solid #dddddd;
+  color: #dddddd;
+  background-color: none;
+}
+
+/* Buttons on hover stying */
+a#button:hover, a#button:active {
+  border: 2px solid #dddddd;
+  background-color: #dddddd;
+  color: #041620;
+}
+
+/* Top and bottom margins for Contact details section in contact.html */
+.contact {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Default styling for Github. */
+/* 0.5s transition handles the return to default state after a hover event */
+a#github {
+  background-color: #22252a;
+  height: 50px;
+  width: 50px;
+  color: #dddddd;
+  display: flex;
+  padding: 0 9px;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Default styling for LinkedIn. */
+/* 0.5s transition handles the return to default state after a hover event */
+a#linkedin {
+  background-color: #0073b0;
+  height: 50px;
+  width: 50px;
+  color: #dddddd;
+  display: flex;
+  padding: 0 9px;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Default styling for Gmail. */
+/* 0.5s transition handles the return to default state after a hover event */
+a#gmail {
+  background-color: #ea4236;
+  height: 50px;
+  width: 50px;
+  color: #dddddd;
+  display: flex;
+  padding: 0 9px;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Hover event for a#github, a#linkedin, a#gmail */
+a#github:hover, a#linkedin:hover, a#gmail:hover {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 0 9px;
+  transition: 0.5s;
+}
+
+/* Hides contact details text until hover event occurs */
+a .show-on-hover {
+  visibility: hidden;
+  padding-left: 30px;
+}
+
+/* Hover event changes text visibility from hidden to visible via 'fade-in' animation */
+a:hover .show-on-hover {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s;
+  animation-name: fade-in;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.6s;
+}
+
+/* Keyframe for a:hover .show-on-hover animation-name: fade-in */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  padding: 20px 0;
+  font-size: 12px;
+}
