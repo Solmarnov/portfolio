@@ -139,3 +139,17 @@ footer {
   padding: 20px 0;
   font-size: 12px;
 }
+
+@media only screen and (max-width: 576px) {
+
+  a#github, a#linkedin, a#gmail {
+    width: 100%;
+    justify-content: left;
+  }
+
+  a .show-on-hover {
+    visibility: visible;
+    opacity: 1;
+    padding-left: 20px;
+  }
+}

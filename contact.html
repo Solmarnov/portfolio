@@ -19,7 +19,7 @@
   </head>
   <body class="primary">
 
-    <nav class="navbar d-flex justify-content-center">
+    <nav class="navbar text-center d-flex justify-content-center">
       <a class="navbar-brand" href="index.html">
         Scott Daniels
       </a>
@@ -27,8 +27,17 @@
 
     <h1 class="text-center mt-5">Contact me</h1>
 
+    <!-- Contact details -->
+    <!-- XS, SM displays -->
+    <div class="contact container d-md-none">
+      <div>
+
+      </div>
+    </div>
+
     <!-- Contact detalis -->
-    <div class="contact container col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+    <!-- MD, LG, XL displays -->
+    <div class="contact container d-md-block col-md-8 col-lg-6 offset-md-2 offset-lg-3">
       <!-- Github -->
       <div>
         <a class="contact-item" href="https://github.com/Solmarnov" id="github" target="_blank"><i class="fab fa-github fa-2x"></i><span class="show-on-hover">www.github.com/Solmarnov</span></a>
@@ -47,13 +56,13 @@
     <!-- Nav buttons for XS, SM displays -->
     <div class="container d-md-none">
       <div class="row">
-        <div class="text-right m-3 mx-1 col-4">
+        <div class="text-right col-4">
           <!-- Button to navigate back to Index -->
           <a class="btn btn-lg" id="button" href="index.html" role="button"><i class="fas fa-angle-double-left pr-2"></i></a>
         </div>
-        <div class="text-center m-3 mx-1 col-6">
+        <div class="col-8">
           <!-- Buttons to navigate to Portfolio -->
-          <a class="btn btn-lg" id="button" href="https://solmarnov.github.io/redsea-epk/" role="button">View my work <i class="fas fa-arrow-right pl-2"></i></a>
+          <a class="btn btn-lg text-center" id="button" href="https://solmarnov.github.io/redsea-epk/" role="button">View my work <i class="fas fa-arrow-right pl-2"></i></a>
         </div>
       </div>
     </div>
