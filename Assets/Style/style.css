@@ -9,7 +9,9 @@ body {
 /* Set primary background image */
 body.primary {
   background-image: url("../Images/shallow-focus-photography-of-water-droplets-1202841.jpg");
+  background-size: auto;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body.portfolio {
