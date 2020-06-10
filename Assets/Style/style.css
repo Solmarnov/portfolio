@@ -17,7 +17,8 @@ body.portfolio {
 }
 
 img.logo {
-  width: 100%;
+  min-width: 50%;
+  max-width: 100%;
 }
 
 /* Logo set in nav */
@@ -26,11 +27,11 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80px;
-  height: 60px;
+  height: 80px;
 }
 
 /* Navbar "brand" font color and size */
-a.navbar-brand {
+a.navbar-brand, a.navbar-brand:hover {
   color: #dddddd;
   font-size: 24px;
 }
@@ -38,6 +39,13 @@ a.navbar-brand {
 /* Title class for index.html */
 .title {
   padding-top: 40px;
+}
+
+/* Featured projects container */
+.featured-project {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: rgba(17, 15, 19, .75);
 }
 
 /* Buttons styling */
@@ -58,6 +66,10 @@ a#button:hover, a#button:active {
 .contact {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+a, a:hover {
+  color: #ffc400;
 }
 
 /* Default styling for Github. */

@@ -3,26 +3,130 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scott Daniels | Welcome</title>
-
+    <title>Scott Daniels | Featured</title>
     <!-- Reset CSS -->
     <link rel="stylesheet" href="Assets/Style/reset.css">
-
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- Google Fonts ('Orbitron', 'Special Elite') -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Special+Elite&display=swap" rel="stylesheet">
-
     <!-- CSS -->
     <link rel="stylesheet" href="Assets/Style/style.css">
-    
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/881878c1bb.js" crossorigin="anonymous"></script>
   </head>
-  <body class="portfolio">
+  <body class="primary">
+    <nav class="navbar text-center d-flex justify-content-center">
+      <a class="navbar-brand" href="index.html">
+        Scott Daniels
+      </a>
+    </nav>
+    <div class="container title">
+      <h1>Featuered projects</h1>
+    </div>
+    <div class="container my-3">
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid featured-project p-3">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3 class="featured-project-title">Red Sea EPK</h5>
+                <p class="featured-project-text">
+                  Electronic Press Kit (EPK) for my band, Red Sea. Think of it as a resume for artists, showcasing our achievements, music and media coverage. 
+                </p>
+                <p>
+                  The repository for this site is currently set to private. 
+                </p>
+                <div class="button-links">
+                  <a class="btn btn-sm m-1" id="button" href="https://solmarnov.github.io/redsea-epk/" target="_blank">Red Sea EPK <i class="fas fa-external-link-alt mx-1"></i></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <a href="https://solmarnov.github.io/redsea-epk/"  target="_blank"><img src="./Assets/Images/redsea-epk.png" class="img-fluid m-1" alt="Screenshot of Red Sea EPK"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <footer class="fixed-bottom">
+    <div class="container my-3">
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid featured-project p-3">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3 class="featured-project-title">Eat-Da-Burger!</h5>
+                <p class="featured-project-text">
+                  A burger logger using MySQL, Node.js, Express, Handlebars and a homemade ORM (yum!). This applications follows the MVC design pattern.
+                </p>
+                <div class="button-links">
+                  <a class="btn btn-sm m-1" id="button" href="https://stormy-mesa-06575.herokuapp.com/" target="_blank">Eat-Da-Burger! <i class="fas fa-external-link-alt mx-1"></i></a>
+                  <a class="btn btn-sm m-1" id="button" href="https://github.com/Solmarnov/eat-da-burger" target="_blank">GitHub repository <i class="fab fa-github mx-1"></i></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <a href="https://stormy-mesa-06575.herokuapp.com/"  target="_blank"><img src="./Assets/Images/eat-da-burger.png" class="img-fluid m-1" alt="Screenshot of Eat-Da-Burger"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-3">
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid featured-project p-3">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3 class="featured-project-title">T.G.I.Forecast</h5>
+                <p class="featured-project-text">
+                  The Greatest International Forecast. No fuss current weather and 4 day forecast dashboard using <a href="https://openweathermap.org/api">https://openweathermap.org/api</a>.
+                </p>
+                <div class="button-links">
+                  <a class="btn btn-sm m-1" id="button" href="https://solmarnov.github.io/weather-dashboard/" target="_blank">T.G.I.Forecast <i class="fas fa-external-link-alt mx-1"></i></a>
+                  <a class="btn btn-sm m-1" id="button" href="https://solmarnov.github.io/weather-dashboard/" target="_blank">GitHub repository <i class="fab fa-github mx-1"></i></a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <a href="https://solmarnov.github.io/weather-dashboard/" target="_blank"><img src="./Assets/Images/tgiforecast-1.png" class="img-fluid m-1" alt="Screenshot of T.G.I.Forecast" style="height: 300px"></a>
+                <a href="https://solmarnov.github.io/weather-dashboard/" target="_blank"><img src="./Assets/Images/tgiforecast-2.png" class="img-fluid m-1" alt="Screenshot of T.G.I.Forecast" style="height: 300px"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button navigation -->
+    <!-- Nav buttons for XS, SM displays -->
+    <div class="container d-md-none">
+      <div class="row">
+        <div class="text-right col-4">
+          <!-- Button to navigate back to Index -->
+          <a class="btn btn-lg" id="button" href="index.html" role="button"><i class="fas fa-angle-double-left pr-2"></i></a>
+        </div>
+        <div class="col-8">
+          <!-- Buttons to navigate to Portfolio -->
+          <a class="btn btn-lg text-center" id="button" href="contact.html" role="button">Contact me <i class="far fa-comments pl-2"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav buttons for MD, LG, XL displays -->
+    <div class="container text-center d-none d-md-block my-5">
+      <div class="row">
+        <div class="col text-center">
+          <!-- Button to navigate back to Index -->
+          <a href="index.html" class="btn btn-lg m-3" id="button"><i class="fas fa-angle-double-left"></i></a>
+          <!-- Button to navigate to Portfolio -->
+          <a href="contact.html" class="btn btn-lg m-3" id="button" target="_blank">Contact me <i class="far fa-comments pl-2"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="">
       <div class="container text-center text-muted">
         &copy;Copyright
       </div>
